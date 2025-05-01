@@ -1,9 +1,8 @@
 ---
-import { ModeToggle } from "../components/ModeToggle";
-import Layout from "../layouts/Layout.astro";
+import Header from "@/components/Header";
+import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout>
-  <h1>Hello Astro</h1>
-  <ModeToggle client:load />
+  <Header client:load />
 </Layout>
