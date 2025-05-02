@@ -1,22 +1,8 @@
+import { navItems } from "@/constants";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { ModeToggle } from "./ModeToggle";
-import { Button } from "./ui/button";
-
-const navItems = [
-  {
-    href: "#about",
-    label: "About",
-  },
-  {
-    href: "#timeline",
-    label: "Timeline",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
-];
+import { ModeToggle } from "../ModeToggle";
+import { Button } from "../ui/button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
