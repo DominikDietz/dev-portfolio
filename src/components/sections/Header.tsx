@@ -9,11 +9,11 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-light-bg/80 dark:bg-dark-bg/80 fixed z-50 w-full shadow-sm backdrop-blur-md">
+    <header className="sticky top-0 z-50 shadow-sm backdrop-blur-md">
       <div className="container mx-auto px-4">
         <nav className="flex h-20 items-center justify-between">
-          <a href="/" className="flex items-center space-x-2">
-            <span className="bg-clip-text text-2xl font-bold">
+          <a href="/">
+            <span className="bg-clip-text text-xl font-bold">
               Dominik Dietz
             </span>
           </a>
@@ -48,7 +48,7 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <div className="bg-light-bg dark:bg-dark-bg absolute w-full p-4 shadow-lg md:hidden">
+        <div className="bg-background absolute z-30 w-full p-4 shadow-lg md:hidden">
           <div className="flex flex-col space-y-4">
             {navItems.map((nav) => (
               <a
