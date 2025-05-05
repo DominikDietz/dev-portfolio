@@ -118,3 +118,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.section-title {
+  @apply mb-8 text-center text-3xl font-bold md:text-4xl;
+}
+
+.section-subtitle {
+  @apply text-muted-foreground mx-auto mb-12 max-w-3xl text-center text-xl;
+}
