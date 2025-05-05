@@ -1,10 +1,13 @@
 ---
 import Header from "@/components/sections/Header";
+import Hero from "@/components/sections/Hero";
+import Skills from "@/components/sections/Skills";
 import Layout from "@/layouts/Layout.astro";
-import Hero from "../components/sections/Hero";
 ---
 
 <Layout>
   <Header client:load />
-  <Hero client:load />
+  <Hero />
+  <Skills client:load />
+  <!-- <Timeline /> -->
 </Layout>
