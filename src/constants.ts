@@ -115,3 +115,49 @@ export const skills: Skill[] = [
     category: "other",
   },
 ];
+
+export interface TimelineItem {
+  timeframe: string;
+  company: string;
+  title: string;
+  location: string;
+  responsibilities: string[];
+}
+
+export const timelineData: TimelineItem[] = [
+  {
+    timeframe: "Nov 2024 - Present",
+    company: "valantic ACE",
+    title: "Expert Consultant",
+    location: "Frankfurt am Main",
+    responsibilities: [
+      "Conception and implementation of a Writeback Extension for bidirectional data exchange between BI application and database",
+      "Localization of an administration platform in the BI area",
+    ],
+  },
+  {
+    timeframe: "Jul 2021 - Oct 2024",
+    company: "Syzygy Techsolutions",
+    title: "Web Developer",
+    location: "Bad Homburg",
+    responsibilities: [
+      "Further development of a B2B sales portal",
+      "Development of a mobile companion app for the sales portal with CapacitorJS",
+      "Maintenance of an internal UI component catalog",
+      "Onboarding and support of new team members",
+      "Implementation of proof of concepts (POCs)",
+      "Ensuring software quality and stability through unit and integration testing as well as code reviews",
+      "Agile working in Scrum and Kanban environments",
+    ],
+  },
+  {
+    timeframe: "Mar 2020 - Jun 2021",
+    company: "Solayer GmbH",
+    title: "Process Developer",
+    location: "Kesselsdorf",
+    responsibilities: [
+      "Research and development of manufacturing processes in the field of vacuum-based thin-film technology for IR filters",
+      "Support of production facilities and analysis equipment",
+    ],
+  },
+];
