@@ -62,6 +62,7 @@ export default function Skills() {
       id="skills"
       title="Skills & Technologies"
       subtitle="My technical toolkit and expertise in web development"
+      isAlternate
     >
       <Tabs
         defaultValue="all"

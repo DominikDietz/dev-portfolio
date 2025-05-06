@@ -4,7 +4,7 @@ import HeroImg from "@/assets/images/hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="pt-16 pb-20 md:pt-40 md:pb-28">
+    <section className="h-screen pt-16 pb-20 md:pt-40 md:pb-28">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         <div className="flex flex-col items-center gap-10 md:flex-row">
           <div className="space-y-6">
