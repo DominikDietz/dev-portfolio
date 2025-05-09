@@ -48,6 +48,7 @@ const Hero = () => {
             <img
               src={HeroImg.src}
               alt="Hero Image"
+              decoding="async"
               className="aspect-square max-h-96 rounded-full border-3 border-sky-700 object-cover dark:border-blue-400"
             />
           </div>
