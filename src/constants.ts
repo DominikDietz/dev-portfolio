@@ -1,3 +1,36 @@
+import {
+  SiCss3,
+  SiEslint,
+  SiGit,
+  SiGithubactions,
+  SiGraphql,
+  SiHtml5,
+  SiJavascript,
+  SiJest,
+  SiLinux,
+  SiNextdotjs,
+  SiPostman,
+  SiPrettier,
+  SiReact,
+  SiRedux,
+  SiSass,
+  SiStorybook,
+  SiSwagger,
+  SiTailwindcss,
+  SiTestinglibrary,
+  SiTypescript,
+  SiWebpack,
+} from "@icons-pack/react-simple-icons";
+import {
+  Accessibility,
+  Database,
+  KanbanSquare,
+  MonitorSmartphone,
+  Network,
+} from "lucide-react";
+import { Vite } from "./assets/icons/vite";
+import { Vitest } from "./assets/icons/vitest";
+
 export const navItems = [
   {
     href: "#about",
@@ -15,7 +48,7 @@ export const navItems = [
 
 export interface Skill {
   name: string;
-  icon: string;
+  icon: React.ComponentType;
   color: string;
   category: "frontend" | "tools" | "other";
 }
@@ -23,95 +56,171 @@ export interface Skill {
 export const skills: Skill[] = [
   {
     name: "HTML5",
-    icon: "code",
+    icon: SiHtml5,
     color: "text-orange-500",
     category: "frontend",
   },
   {
     name: "CSS3",
-    icon: "palette",
+    icon: SiCss3,
     color: "text-blue-500",
     category: "frontend",
   },
   {
     name: "Sass",
-    icon: "sparkles",
+    icon: SiSass,
     color: "text-pink-500",
     category: "frontend",
   },
   {
     name: "Tailwind",
-    icon: "wind",
+    icon: SiTailwindcss,
     color: "text-cyan-500",
     category: "frontend",
   },
   {
     name: "JavaScript",
-    icon: "square-code",
+    icon: SiJavascript,
     color: "text-yellow-500",
     category: "frontend",
   },
   {
     name: "TypeScript",
-    icon: "file-type",
+    icon: SiTypescript,
     color: "text-blue-600",
     category: "frontend",
   },
-  { name: "React", icon: "atom", color: "text-sky-500", category: "frontend" },
+  {
+    name: "React",
+    icon: SiReact,
+    color: "text-sky-500",
+    category: "frontend",
+  },
   {
     name: "Redux",
-    icon: "database",
+    icon: SiRedux,
     color: "text-purple-600",
     category: "frontend",
   },
   {
     name: "Zustand",
-    icon: "bear",
+    icon: Database,
     color: "text-amber-600",
     category: "frontend",
   },
   {
     name: "Next.js",
-    icon: "server",
+    icon: SiNextdotjs,
     color: "text-black dark:text-white",
     category: "frontend",
   },
   {
     name: "Git",
-    icon: "git-branch",
+    icon: SiGit,
     color: "text-orange-600",
     category: "tools",
   },
-  { name: "Vite", icon: "zap", color: "text-purple-500", category: "tools" },
-  { name: "Jest", icon: "test-tube", color: "text-red-500", category: "tools" },
   {
-    name: "Linux",
-    icon: "terminal",
-    color: "text-green-600",
-    category: "other",
+    name: "Vite",
+    icon: Vite,
+    color: "text-purple-500",
+    category: "tools",
+  },
+
+  {
+    name: "Vitest",
+    icon: Vitest,
+    color: "text-purple-500",
+    category: "tools",
   },
   {
-    name: "Windows",
-    icon: "window",
+    name: "Jest",
+    icon: SiJest,
+    color: "text-red-500",
+    category: "tools",
+  },
+  {
+    name: "ESLint",
+    icon: SiEslint,
+    color: "text-purple-600",
+    category: "tools",
+  },
+  {
+    name: "Prettier",
+    icon: SiPrettier,
+    color: "text-pink-500",
+    category: "tools",
+  },
+  {
+    name: "Storybook",
+    icon: SiStorybook,
+    color: "text-pink-600",
+    category: "tools",
+  },
+  {
+    name: "Webpack",
+    icon: SiWebpack,
     color: "text-blue-500",
+    category: "tools",
+  },
+  {
+    name: "GraphQL",
+    icon: SiGraphql,
+    color: "text-pink-600",
+    category: "frontend",
+  },
+  {
+    name: "REST APIs",
+    icon: Network,
+    color: "text-green-600",
+    category: "frontend",
+  },
+  {
+    name: "Postman",
+    icon: SiPostman,
+    color: "text-orange-500",
+    category: "tools",
+  },
+  {
+    name: "Swagger",
+    icon: SiSwagger,
+    color: "text-green-500",
+    category: "tools",
+  },
+  {
+    name: "Linux",
+    icon: SiLinux,
+    color: "text-black-600",
     category: "other",
   },
   {
     name: "Responsive Design",
-    icon: "smartphone",
+    icon: MonitorSmartphone,
     color: "text-teal-500",
     category: "frontend",
   },
   {
     name: "Web Accessibility",
-    icon: "accessibility",
+    icon: Accessibility,
     color: "text-green-500",
     category: "frontend",
   },
   {
     name: "Agile Development",
-    icon: "kanban-square",
+    icon: KanbanSquare,
     color: "text-indigo-500",
+    category: "other",
+  },
+  {
+    name: "Testing Library",
+    icon: SiTestinglibrary,
+    color: "text-red-500",
+    category: "other",
+  },
+  {
+    name: "CI/CD",
+    icon: SiGithubactions,
+    color: "text-blue-500",
     category: "other",
   },
 ];
