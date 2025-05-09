@@ -1,5 +1,5 @@
-import GithubIcon from "@/assets/icons/GithubIcon";
-import LinkedinIcon from "@/assets/icons/LinkedinIcon";
+import GithubIcon from "@/assets/icons/github";
+import LinkedinIcon from "@/assets/icons/linkedin";
 import HeroImg from "@/assets/images/hero.jpg";
 
 const Hero = () => {
