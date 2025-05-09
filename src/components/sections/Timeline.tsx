@@ -16,7 +16,7 @@ export default function Timeline() {
         const isLast = index === timelineData.length - 1;
 
         const cardClasses = cn(
-          "border-primary/20 hover:border-primary mb-6 grow py-0 transition-all duration-300 md:ml-16",
+          "border-primary/20 hover:border-primary mb-6 grow py-0 transition-all duration-300 ml-8 md:ml-16",
           {
             "mb-0": isLast,
           },
