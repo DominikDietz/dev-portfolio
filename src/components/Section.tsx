@@ -16,7 +16,7 @@ const Section = ({
   isAlternate,
 }: SectionProps) => {
   const sectionClass = cn({
-    "bg-muted/30": isAlternate,
+    "bg-muted/20": isAlternate,
   });
 
   return (
