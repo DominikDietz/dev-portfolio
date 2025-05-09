@@ -235,7 +235,7 @@ export interface TimelineItem {
 
 export const timelineData: TimelineItem[] = [
   {
-    timeframe: "Nov 2024 - Present",
+    timeframe: "Nov 2024 - April 2025",
     company: "valantic ACE",
     title: "Expert Consultant",
     location: "Frankfurt am Main",
