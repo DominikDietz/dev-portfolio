@@ -24,7 +24,7 @@ const Hero = () => {
 
             <div className="flex items-center gap-4 pt-4">
               <a
-                href="https://github.com"
+                href="https://github.com/DominikDietz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="dark:hover:text-primary text-gray-800 transition-transform hover:scale-110 dark:text-gray-200"
@@ -33,7 +33,7 @@ const Hero = () => {
                 <GithubIcon />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/dominik-dietz-3006a0218/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="dark:hover:text-primary text-gray-800 transition-transform hover:scale-110 dark:text-gray-200"
